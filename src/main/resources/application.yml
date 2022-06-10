@@ -1,0 +1,24 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://tb19950503user@bitbucket.org/tb19950503user/maxsulot1.git
+          username: samo
+          password: 1273
+  datasource:
+    url: jdbc:postgresql://localhost:5433/sinov
+    username: postgres
+    password: 1273
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+      format_sql: true
+  application:
+    name: tracinglogs
+server:
+  port: 8081
