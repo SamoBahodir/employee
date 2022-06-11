@@ -26,7 +26,7 @@ public class Employee {
     private String lastName;
 
     @NotEmpty
-    @Size(min = 2,message = "Kamida 2ta belgi bolishi kerak")
+    @Size(min = 8,message = "Kamida 8ta belgi bolishi kerak")
     private String email;
 
     @NotEmpty
