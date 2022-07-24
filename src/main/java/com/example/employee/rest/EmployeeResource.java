@@ -10,7 +10,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.EnableTransactionManagement;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -20,7 +19,6 @@ import java.util.List;
 @RequestMapping()
 @RequiredArgsConstructor
 @Tag(name = "Employee controller")
-@EnableTransactionManagement
 public class EmployeeResource {
     private final EmployeeService employeeService;
     private final EmployeeRepository employeeRepository;
